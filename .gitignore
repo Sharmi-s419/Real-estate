@@ -1,0 +1,54 @@
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Python / Django backend
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+venv/
+.venv/
+env/
+ENV/
+backend/venv/
+backend/.venv/
+*.sqlite3
+db.sqlite3
+media/
+staticfiles/
+.pytest_cache/
+.mypy_cache/
+.coverage
+
+# Node.js / React frontend
+node_modules/
+dist/
+build/
+.vite/
+coverage/
+.npm/
+
+# Logs and temporary files
+*.log
+logs/
+tmp/
+temp/
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Local configuration
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Deployment and generated files
+.vercel/
+.netlify/
+
+# Python environment and IDE files
+.python-version
