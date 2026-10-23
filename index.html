@@ -46,7 +46,7 @@
       <nav class="desktop-nav" aria-label="Main Navigation">
         <a href="#hero" class="nav-link active" id="nav-home">Home</a>
         <a href="#properties" class="nav-link" id="nav-properties">Properties</a>
-        <a href="#services" class="nav-link" id="nav-services">Our Services</a>
+        <a href="construction.html" class="nav-link" id="nav-construction">Construction Services</a>
         <a href="#about" class="nav-link" id="nav-about">About Us</a>
         <a href="#contact" class="nav-link" id="nav-contact">Get In Touch</a>
       </nav>
@@ -89,7 +89,7 @@
       </div>
       <a href="#hero" class="mobile-nav-link" id="mob-home">Home</a>
       <a href="#properties" class="mobile-nav-link" id="mob-properties">Properties</a>
-      <a href="#services" class="mobile-nav-link" id="mob-services">Our Services</a>
+      <a href="construction.html" class="mobile-nav-link" id="mob-construction">Construction Services</a>
       <a href="#about" class="mobile-nav-link" id="mob-about">About Us</a>
       <a href="#contact" class="mobile-nav-link" id="mob-contact">Get In Touch</a>
       <div style="display: flex; flex-direction: column; gap: 10px; margin-top: 14px; padding-top: 12px; border-top: 1px solid var(--border-subtle);">
@@ -114,11 +114,11 @@
           <!-- Hero Copy Content -->
           <div class="hero-content">
             <!-- Single Required H1 with Headline -->
-            <h1 class="hero-title">Find Your Perfect Property in Kanyakumari</h1>
+            <h1 class="hero-title">Real Estate & Building Construction in Kanniyakumari</h1>
 
             <!-- Supporting Text -->
             <p class="hero-subtitle">
-              Explore residential plots, independent houses, villas, apartments, and commercial properties across Kanyakumari district.
+              From verified land plots to turnkey independent houses, commercial buildings, and custom home construction across Kanniyakumari district, Tamil Nadu.
             </p>
 
             <!-- Prominent Action Buttons -->
@@ -127,8 +127,47 @@
                 <span>Explore Properties</span>
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
               </a>
-              <a href="#contact" class="btn btn-secondary btn-lg" id="hero-contact-btn">
+              <a href="#construction-services" class="btn btn-secondary btn-lg" id="hero-construction-btn">
+                <span>Construction Services</span>
+              </a>
+              <a href="#contact" class="btn btn-gold btn-lg" id="hero-contact-btn">
                 <span>Get In Touch</span>
+              </a>
+            </div>
+
+            <!-- 3-Way Service Intent Choice Hub -->
+            <div class="hero-intent-grid" role="region" aria-label="Explore our core services">
+              <a href="#properties" class="hero-intent-card" id="intent-find-property">
+                <div class="hero-intent-icon" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                </div>
+                <div class="hero-intent-info">
+                  <span class="hero-intent-title">Finding a Property</span>
+                  <span class="hero-intent-sub">Plots, houses, villas & commercial land</span>
+                </div>
+                <span class="hero-intent-arrow" aria-hidden="true">→</span>
+              </a>
+
+              <a href="#construction-services" class="hero-intent-card" id="intent-construction-services">
+                <div class="hero-intent-icon" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+                </div>
+                <div class="hero-intent-info">
+                  <span class="hero-intent-title">Construction Services</span>
+                  <span class="hero-intent-sub">Enquire about houses, shops & apartments</span>
+                </div>
+                <span class="hero-intent-arrow" aria-hidden="true">→</span>
+              </a>
+
+              <a href="#contact" class="hero-intent-card construction-enquire-btn" data-service="Land-to-Home Solutions" id="intent-land-and-build">
+                <div class="hero-intent-icon" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="12" y1="18" x2="12" y2="12"/><line x1="9" y1="15" x2="15" y2="15"/></svg>
+                </div>
+                <div class="hero-intent-info">
+                  <span class="hero-intent-title">Land & Construction</span>
+                  <span class="hero-intent-sub">Explore land + custom building together</span>
+                </div>
+                <span class="hero-intent-arrow" aria-hidden="true">→</span>
               </a>
             </div>
 
@@ -140,11 +179,11 @@
               </div>
               <div class="hero-trust-item">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
-                <span>Direct Developer Pricing</span>
+                <span>Direct Consultation</span>
               </div>
               <div class="hero-trust-item">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-                <span>Kanyakumari Specialists</span>
+                <span>Kanniyakumari District</span>
               </div>
             </div>
           </div>
@@ -331,104 +370,293 @@
     </section>
 
     <!-- ==========================================================================
-         OUR SERVICES SECTION
+         BUILDING & CONSTRUCTION SERVICES SECTION
          ========================================================================== -->
-    <section class="section section-sand" id="services">
+    <section class="section section-sand" id="construction-services">
       <div class="container">
         <header class="section-header">
-          <span class="section-eyebrow">Expertise & Capabilities</span>
-          <h2 class="section-title">Real Estate & Property Development Services</h2>
+          <span class="section-eyebrow">Kanniyakumari District, Tamil Nadu</span>
+          <h2 class="section-title">Building & Construction Services</h2>
           <p class="section-subtitle">
-            From layout sanctioning and land development to turnkey construction and legal clearance, <strong>TLF BUILDERS</strong> provides complete property solutions.
+            “From your vision to your dream space, we help you plan and build.”
           </p>
+          <div class="construction-demo-notice" role="note">
+            <span class="demo-notice-tag">Illustrative Building Examples & Consultation</span>
+            <span class="demo-notice-text">
+              Services listed below are open for planning enquiry and client consultation across Kanniyakumari district. Displayed photographs are illustrative demo representations of architectural and construction formats, not claimed past company executions.
+            </span>
+          </div>
+          <div style="margin-top: 18px;">
+            <a href="construction.html" class="btn btn-secondary btn-sm" id="view-construction-page-btn">
+              <span>View Dedicated Construction Services Page</span>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </a>
+          </div>
         </header>
 
-        <div class="services-grid">
-          <!-- Service 1: Residential Plotted Development -->
-          <article class="service-card" id="service-plots">
-            <div class="service-icon-box" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+        <div class="construction-services-grid">
+          <!-- Service 1: Residential House Construction -->
+          <article class="construction-card" id="service-residential-construction">
+            <div class="construction-card-img-wrap">
+              <img 
+                src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=800&q=80" 
+                alt="Demo photograph of residential house construction" 
+                class="construction-card-img"
+                loading="lazy"
+              >
+              <span class="construction-card-overlay-badge">Residential</span>
+              <span class="construction-card-illustrative-tag">Illustrative Demo</span>
             </div>
-            <h3 class="service-title">Gated Plotted Layouts</h3>
-            <blockquote class="service-quote">
-              “Approved residential plots with modern infrastructure, blacktop roads, and instant appreciation.”
-            </blockquote>
-            <p class="service-desc">
-              We acquire prime land corridors and develop fully sanctioned residential layouts with underground drainage, copious water supply, street lighting, and demarcated villa plots.
-            </p>
-            <ul class="service-features-list">
-              <li class="service-feature-item">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-                <span>DTCP and Town Planning sanctioned approvals</span>
-              </li>
-              <li class="service-feature-item">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-                <span>40-ft and 30-ft tar roads with pedestrian walkways</span>
-              </li>
-              <li class="service-feature-item">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-                <span>100% Vaastu compliant individual plot demarcations</span>
-              </li>
-            </ul>
-            <a href="#properties" class="btn btn-secondary service-action-btn">Explore Residential Plots</a>
+            <div class="construction-card-body">
+              <h3 class="construction-card-title">Residential House Construction</h3>
+              <div class="construction-card-tagline">
+                Independent houses, family homes, villas, and custom-designed homes.
+              </div>
+              <p class="construction-card-desc">
+                Comprehensive planning and building consultation for individual houses, family homes, contemporary duplex villas, and custom residences designed for your plot in Kanniyakumari district.
+              </p>
+              <div class="construction-status-pill">
+                <span class="status-dot"></span>
+                <span>Available for Planning Enquiry</span>
+              </div>
+              <ul class="construction-features-list">
+                <li class="construction-feature-item">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>Independent single & multi-floor family homes</span>
+                </li>
+                <li class="construction-feature-item">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>Modern villas and traditional South Indian elevations</span>
+                </li>
+                <li class="construction-feature-item">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>Civil structural coordination and quality oversight</span>
+                </li>
+              </ul>
+              <button type="button" class="btn btn-primary construction-card-action-btn construction-enquire-btn" data-service="Residential House Construction">
+                <span>Enquire About Construction</span>
+              </button>
+            </div>
           </article>
 
-          <!-- Service 2: Turnkey Villa & House Construction -->
-          <article class="service-card" id="service-construction">
-            <div class="service-icon-box" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+          <!-- Service 2: Shops & Commercial Buildings -->
+          <article class="construction-card" id="service-commercial-construction">
+            <div class="construction-card-img-wrap">
+              <img 
+                src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=800&q=80" 
+                alt="Demo photograph of commercial building and shop construction" 
+                class="construction-card-img"
+                loading="lazy"
+              >
+              <span class="construction-card-overlay-badge">Commercial</span>
+              <span class="construction-card-illustrative-tag">Illustrative Demo</span>
             </div>
-            <h3 class="service-title">Turnkey Villa Construction</h3>
-            <blockquote class="service-quote">
-              “Custom architectural design and high-grade construction tailored to your lifestyle.”
-            </blockquote>
-            <p class="service-desc">
-              TLF BUILDERS specializes in building custom 3 & 4 BHK independent villas and luxury houses using premium TMT steel, ready-mix concrete, Italian tiling, and teak woodwork.
-            </p>
-            <ul class="service-features-list">
-              <li class="service-feature-item">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-                <span>Seismic-resistant RCC framed structural engineering</span>
-              </li>
-              <li class="service-feature-item">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-                <span>Turnkey execution from plan approval to key handover</span>
-              </li>
-              <li class="service-feature-item">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-                <span>Branded electrical, plumbing, and sanitary fittings</span>
-              </li>
-            </ul>
-            <a href="#properties" class="btn btn-secondary service-action-btn">Browse Available Villas</a>
+            <div class="construction-card-body">
+              <h3 class="construction-card-title">Shops & Commercial Buildings</h3>
+              <div class="construction-card-tagline">
+                Shops, showrooms, offices, and commercial spaces.
+              </div>
+              <p class="construction-card-desc">
+                Planning and construction assistance for retail shops, roadside commercial showrooms, professional office spaces, and multi-tenant commercial structures along prime corridors.
+              </p>
+              <div class="construction-status-pill">
+                <span class="status-dot"></span>
+                <span>Available for Planning Enquiry</span>
+              </div>
+              <ul class="construction-features-list">
+                <li class="construction-feature-item">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>High-traffic retail shops and roadside showroom spaces</span>
+                </li>
+                <li class="construction-feature-item">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>Multi-level RCC framed commercial complex construction</span>
+                </li>
+                <li class="construction-feature-item">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>Commercial frontage, parking, and utility planning</span>
+                </li>
+              </ul>
+              <button type="button" class="btn btn-primary construction-card-action-btn construction-enquire-btn" data-service="Shops & Commercial Buildings">
+                <span>Enquire About Construction</span>
+              </button>
+            </div>
           </article>
 
-          <!-- Service 3: Property Advisory & Clear Titles -->
-          <article class="service-card" id="service-advisory">
-            <div class="service-icon-box" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          <!-- Service 3: Apartment Construction -->
+          <article class="construction-card" id="service-apartment-construction">
+            <div class="construction-card-img-wrap">
+              <img 
+                src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=800&q=80" 
+                alt="Demo photograph of residential apartment building construction" 
+                class="construction-card-img"
+                loading="lazy"
+              >
+              <span class="construction-card-overlay-badge">Apartments</span>
+              <span class="construction-card-illustrative-tag">Illustrative Demo</span>
             </div>
-            <h3 class="service-title">Legal & Title Advisory</h3>
-            <blockquote class="service-quote">
-              “100% legal clarity, Patta verification, and bank loan pre-approvals.”
-            </blockquote>
-            <p class="service-desc">
-              We assist buyers and landowners through parent deed verification, encumbrance certificates (EC), registration documentation, and end-to-end liaison with leading housing finance banks.
-            </p>
-            <ul class="service-features-list">
-              <li class="service-feature-item">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-                <span>Thorough title legal scrutiny by senior advocates</span>
-              </li>
-              <li class="service-feature-item">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-                <span>Assistance with Patta / Khata title transfers</span>
-              </li>
-              <li class="service-feature-item">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-                <span>Fast bank loan approvals with nationalized banks</span>
-              </li>
-            </ul>
-            <a href="#contact" class="btn btn-primary service-action-btn">Consult Our Advisory</a>
+            <div class="construction-card-body">
+              <h3 class="construction-card-title">Apartment Construction</h3>
+              <div class="construction-card-tagline">
+                Residential apartment buildings and multi-unit homes.
+              </div>
+              <p class="construction-card-desc">
+                Consultation and construction execution coordination for multi-family residential apartments, builder floor complexes, and multi-unit rental developments in town centers.
+              </p>
+              <div class="construction-status-pill">
+                <span class="status-dot"></span>
+                <span>Available for Planning Enquiry</span>
+              </div>
+              <ul class="construction-features-list">
+                <li class="construction-feature-item">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>Multi-unit residential apartment developments</span>
+                </li>
+                <li class="construction-feature-item">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>Optimized unit floorplans with balcony & utility zones</span>
+                </li>
+                <li class="construction-feature-item">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>Common stairwells, lift provisions & vehicle parking</span>
+                </li>
+              </ul>
+              <button type="button" class="btn btn-primary construction-card-action-btn construction-enquire-btn" data-service="Apartment Construction">
+                <span>Enquire About Construction</span>
+              </button>
+            </div>
+          </article>
+
+          <!-- Service 4: Renovation & Extensions -->
+          <article class="construction-card" id="service-renovation-construction">
+            <div class="construction-card-img-wrap">
+              <img 
+                src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=800&q=80" 
+                alt="Demo photograph of home renovation and building extensions" 
+                class="construction-card-img"
+                loading="lazy"
+              >
+              <span class="construction-card-overlay-badge">Remodeling</span>
+              <span class="construction-card-illustrative-tag">Illustrative Demo</span>
+            </div>
+            <div class="construction-card-body">
+              <h3 class="construction-card-title">Renovation & Extensions</h3>
+              <div class="construction-card-tagline">
+                Home renovations, additional rooms, extensions, and improvements.
+              </div>
+              <p class="construction-card-desc">
+                Upgrade and expand your existing property with planned structural modifications, floor additions, room extensions, roofing upgrades, and modern facade revamps.
+              </p>
+              <div class="construction-status-pill">
+                <span class="status-dot"></span>
+                <span>Available for Planning Enquiry</span>
+              </div>
+              <ul class="construction-features-list">
+                <li class="construction-feature-item">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>Additional floor construction and room extensions</span>
+                </li>
+                <li class="construction-feature-item">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>Exterior elevation remodeling and modernizing</span>
+                </li>
+                <li class="construction-feature-item">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>Structural reinforcement, waterproofing & plumbing renewal</span>
+                </li>
+              </ul>
+              <button type="button" class="btn btn-primary construction-card-action-btn construction-enquire-btn" data-service="Renovation & Extensions">
+                <span>Enquire About Construction</span>
+              </button>
+            </div>
+          </article>
+
+          <!-- Service 5: Building Planning & Design -->
+          <article class="construction-card" id="service-planning-design">
+            <div class="construction-card-img-wrap">
+              <img 
+                src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=800&q=80" 
+                alt="Demo photograph of building layout planning and design" 
+                class="construction-card-img"
+                loading="lazy"
+              >
+              <span class="construction-card-overlay-badge">Planning</span>
+              <span class="construction-card-illustrative-tag">Illustrative Demo</span>
+            </div>
+            <div class="construction-card-body">
+              <h3 class="construction-card-title">Building Planning & Design</h3>
+              <div class="construction-card-tagline">
+                Layout planning and architectural design coordination, where available.
+              </div>
+              <p class="construction-card-desc">
+                Layout planning and architectural coordination, bridging ideas with buildable blueprints. From Vaastu orientation to working civil drawings and municipal submissions.
+              </p>
+              <div class="construction-status-pill">
+                <span class="status-dot"></span>
+                <span>Available for Planning Enquiry</span>
+              </div>
+              <ul class="construction-features-list">
+                <li class="construction-feature-item">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>2D floor plans, spatial layouts, and section drawings</span>
+                </li>
+                <li class="construction-feature-item">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>3D exterior elevation rendering coordination</span>
+                </li>
+                <li class="construction-feature-item">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>Local authority approval and plan sanction assistance</span>
+                </li>
+              </ul>
+              <button type="button" class="btn btn-primary construction-card-action-btn construction-enquire-btn" data-service="Building Planning & Design">
+                <span>Enquire About Construction</span>
+              </button>
+            </div>
+          </article>
+
+          <!-- Service 6: Land-to-Home Solutions -->
+          <article class="construction-card" id="service-land-to-home">
+            <div class="construction-card-img-wrap">
+              <img 
+                src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=800&q=80" 
+                alt="Demo photograph of land to home integrated solution" 
+                class="construction-card-img"
+                loading="lazy"
+              >
+              <span class="construction-card-overlay-badge">Land + Build</span>
+              <span class="construction-card-illustrative-tag">Illustrative Demo</span>
+            </div>
+            <div class="construction-card-body">
+              <h3 class="construction-card-title">Land-to-Home Solutions</h3>
+              <div class="construction-card-tagline">
+                Help customers explore suitable land and house construction options together.
+              </div>
+              <p class="construction-card-desc">
+                An integrated service combining land identification with tailored home construction planning, helping clients find verified plots and coordinate construction under one trusted roof.
+              </p>
+              <div class="construction-status-pill">
+                <span class="status-dot"></span>
+                <span>Available for Planning Enquiry</span>
+              </div>
+              <ul class="construction-features-list">
+                <li class="construction-feature-item">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>Dual assistance: Verified plot selection + custom home design</span>
+                </li>
+                <li class="construction-feature-item">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>Soil and road access evaluation for optimal foundation planning</span>
+                </li>
+                <li class="construction-feature-item">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>Single-point coordination from land deed to house plan</span>
+                </li>
+              </ul>
+              <button type="button" class="btn btn-primary construction-card-action-btn construction-enquire-btn" data-service="Land-to-Home Solutions">
+                <span>Enquire About Construction</span>
+              </button>
+            </div>
           </article>
         </div>
       </div>
@@ -630,26 +858,31 @@
             </div>
           </div>
 
-          <!-- General Property Enquiry Form -->
-          <div style="background-color: var(--color-sand-light); border-radius: var(--radius-md); padding: 32px; border: 1px solid var(--border-subtle);">
-            <h4 style="font-family: var(--font-serif); font-size: 1.35rem; color: var(--color-navy); margin-bottom: 6px;">
-              Send a Property Enquiry
-            </h4>
+          <!-- Combined Construction & Property Enquiry Form -->
+          <div id="contact-form-card" style="background-color: var(--color-sand-light); border-radius: var(--radius-md); padding: 32px; border: 1.5px solid var(--border-subtle); transition: all var(--transition-normal);">
+            <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 6px;">
+              <h4 style="font-family: var(--font-serif); font-size: 1.35rem; color: var(--color-navy); margin: 0;">
+                Enquiry & Consultation Form
+              </h4>
+              <span style="font-size: 0.72rem; font-weight: 700; color: var(--color-gold-dark); text-transform: uppercase; letter-spacing: 0.06em; background: rgba(201, 168, 106, 0.15); padding: 3px 8px; border-radius: var(--radius-pill);">
+                Kanniyakumari District
+              </span>
+            </div>
             <p style="font-size: 0.86rem; color: var(--text-muted); margin-bottom: 22px;">
-              Fill in your details below. Your enquiry will be securely saved and our advisory team will respond promptly.
+              Enquire about residential or commercial construction services, land acquisition, or combined building solutions.
             </p>
 
             <form id="contact-general-form" novalidate>
-              <!-- Customer Name -->
+              <!-- Full Name -->
               <div class="form-group" style="margin-bottom: 14px;">
-                <label for="contact-name" class="form-label">Customer Name *</label>
+                <label for="contact-name" class="form-label">Full Name *</label>
                 <input type="text" id="contact-name" name="name" class="form-input" placeholder="e.g. Ramesh Chandra" required>
               </div>
 
               <!-- Phone and Email -->
               <div class="form-two-col" style="margin-bottom: 14px;">
                 <div class="form-group">
-                  <label for="contact-phone" class="form-label">Mobile Number *</label>
+                  <label for="contact-phone" class="form-label">Phone Number *</label>
                   <input type="tel" id="contact-phone" name="phone" class="form-input" placeholder="e.g. +91 95782 99953" required>
                 </div>
                 <div class="form-group">
@@ -658,48 +891,75 @@
                 </div>
               </div>
 
-              <!-- Property of Interest in Kanyakumari District -->
+              <!-- Service Required (Preselected via Enquire buttons) -->
               <div class="form-group" style="margin-bottom: 14px;">
-                <label for="contact-interest" class="form-label">Property or Category of Interest *</label>
+                <label for="contact-interest" class="form-label">Service Required *</label>
                 <select id="contact-interest" name="interest" class="form-select" required>
-                  <optgroup label="Residential Properties (Kanyakumari)">
-                    <option value="TLF Green Valley Residential Plots (Nagercoil)">TLF Green Valley — Residential Plots (Nagercoil)</option>
-                    <option value="TLF Heritage 3 BHK Independent House (Marthandam)">TLF Heritage — 3 BHK Independent House (Marthandam)</option>
-                    <option value="TLF Cape Palms Luxury Villa (Kanyakumari Coast)">TLF Cape Palms — Luxury Villa (Kanyakumari Coast)</option>
-                    <option value="TLF Hillview Heights 2 & 3 BHK Flats (Asaripallam)">TLF Hillview Heights — 2 & 3 BHK Flats (Asaripallam)</option>
-                    <option value="TLF Palm Orchard Gated Township (Thuckalay)">TLF Palm Orchard — Gated Township (Thuckalay)</option>
+                  <optgroup label="Building & Construction Services">
+                    <option value="Residential House Construction">Residential House Construction</option>
+                    <option value="Shops & Commercial Buildings">Shops & Commercial Buildings</option>
+                    <option value="Apartment Construction">Apartment Construction</option>
+                    <option value="Renovation & Extensions">Renovation & Extensions</option>
+                    <option value="Building Planning & Design">Building Planning & Design</option>
+                    <option value="Land-to-Home Solutions">Land-to-Home Solutions</option>
                   </optgroup>
-                  <optgroup label="Commercial Properties (Kanyakumari)">
-                    <option value="TLF Highway Commercial Development Land (NH 66)">TLF Highway Commercial Land (NH 66 Nagercoil)</option>
-                    <option value="TLF Central Market Retail Showroom Space (Marthandam)">TLF Central Market — Retail Showroom (Marthandam)</option>
-                    <option value="TLF Corporate Suites & Professional Offices (Nagercoil)">TLF Corporate Suites — Office Space (Collectorate Rd)</option>
-                    <option value="TLF Landmark Multi-Storey Commercial Complex (Colachel)">TLF Landmark — Commercial Complex (Colachel)</option>
-                    <option value="TLF High-Yield Commercial Land Asset (Suchindram)">TLF High-Yield Commercial Land (Suchindram)</option>
-                  </optgroup>
-                  <optgroup label="General & Development Enquiries">
-                    <option value="General Residential Property Consultation">General Residential Property Consultation</option>
-                    <option value="General Commercial Investment Consultation">General Commercial Investment Consultation</option>
-                    <option value="Landowner Property Sale / Joint Venture Development">Landowner Property Sale / Joint Venture Development</option>
+                  <optgroup label="Real Estate & Land Properties">
+                    <option value="Residential Plots & Vacant Land">Residential Plots & Vacant Land</option>
+                    <option value="Independent House / Villa Purchase">Independent House / Villa Purchase</option>
+                    <option value="Modern Residential Apartments">Modern Residential Apartments</option>
+                    <option value="Commercial Land & Development Sites">Commercial Land & Development Sites</option>
+                    <option value="Retail Shops & Commercial Buildings">Retail Shops & Commercial Buildings</option>
+                    <option value="General Property Consultation">General Property Consultation</option>
                   </optgroup>
                 </select>
               </div>
 
-              <!-- Message -->
-              <div class="form-group" style="margin-bottom: 16px;">
-                <label for="contact-message" class="form-label">Message / Specific Requirements *</label>
-                <textarea id="contact-message" name="message" rows="3" class="form-input" placeholder="Please specify your preferred location in Kanyakumari district, budget, plot size in cents, or schedule a site visit..." required></textarea>
+              <!-- Project Location & Plot/Land Availability -->
+              <div class="form-two-col" style="margin-bottom: 14px;">
+                <div class="form-group">
+                  <label for="contact-location" class="form-label">Project Location in Kanniyakumari *</label>
+                  <input type="text" id="contact-location" name="location" class="form-input" placeholder="e.g. Nagercoil, Marthandam, Thuckalay..." required>
+                </div>
+                <div class="form-group">
+                  <label for="contact-land-status" class="form-label">Plot or Land Availability *</label>
+                  <select id="contact-land-status" name="land_status" class="form-select" required>
+                    <option value="Own land">Own land (Ready for construction)</option>
+                    <option value="Need land">Need land (Exploring land + build)</option>
+                    <option value="Not decided">Not decided (Seeking advice)</option>
+                  </select>
+                </div>
               </div>
 
-              <!-- Consent Checkbox -->
+              <!-- Approximate Budget -->
+              <div class="form-group" style="margin-bottom: 14px;">
+                <label for="contact-budget" class="form-label">Approximate Budget *</label>
+                <select id="contact-budget" name="budget" class="form-select" required>
+                  <option value="Under ₹30 Lakhs">Under ₹30 Lakhs</option>
+                  <option value="₹30 Lakhs – ₹50 Lakhs" selected>₹30 Lakhs – ₹50 Lakhs</option>
+                  <option value="₹50 Lakhs – ₹75 Lakhs">₹50 Lakhs – ₹75 Lakhs</option>
+                  <option value="₹75 Lakhs – ₹1.25 Crore">₹75 Lakhs – ₹1.25 Crore</option>
+                  <option value="₹1.25 Crore – ₹2.5 Crore">₹1.25 Crore – ₹2.5 Crore</option>
+                  <option value="Above ₹2.5 Crore">Above ₹2.5 Crore</option>
+                  <option value="To be discussed">To be discussed / Flexible</option>
+                </select>
+              </div>
+
+              <!-- Additional Requirements -->
+              <div class="form-group" style="margin-bottom: 16px;">
+                <label for="contact-message" class="form-label">Additional Requirements *</label>
+                <textarea id="contact-message" name="message" rows="3" class="form-input" placeholder="Please specify your project details (e.g. plot area in cents, built-up area in sq.ft, timeline, architectural preferences)..." required></textarea>
+              </div>
+
+              <!-- DPDP Consent Checkbox -->
               <div style="margin-bottom: 18px;">
                 <label class="checkbox-label">
                   <input type="checkbox" id="contact-dpdp-consent" name="dpdp_consent" required checked>
-                  <span>I consent to being contacted by TLF BUILDERS regarding my property enquiry under the Digital Personal Data Protection Act, 2023.</span>
+                  <span>I consent to being contacted by TLF BUILDERS regarding my construction or property enquiry under the Digital Personal Data Protection Act, 2023.</span>
                 </label>
               </div>
 
-              <button type="submit" class="btn btn-primary" style="width: 100%;">
-                Submit Property Enquiry
+              <button type="submit" class="btn btn-primary" id="contact-submit-btn" style="width: 100%;">
+                Submit Construction & Property Enquiry
               </button>
             </form>
           </div>
@@ -725,10 +985,10 @@
             </div>
           </div>
           <p class="footer-desc">
-            A dedicated property sales and real estate firm operating exclusively across Kanyakumari district, Tamil Nadu. Promoting verified residential plots, independent houses, luxury villas, modern apartments, and prime commercial investments.
+            A dedicated property development and construction firm operating exclusively across Kanniyakumari district, Tamil Nadu. Providing residential house construction, commercial buildings, apartments, renovations, planning, and verified real estate sales.
           </p>
           <div style="font-size: 0.82rem; color: #94a3b8; line-height: 1.6; margin-top: 10px;">
-            <strong>Location:</strong> Kanyakumari District, Tamil Nadu, India<br>
+            <strong>Location:</strong> Kanniyakumari District, Tamil Nadu, India<br>
             <strong>Contact Number:</strong> <a href="tel:+919578299953" style="color: var(--color-gold-light);">+91 95782 99953</a><br>
             <strong>WhatsApp:</strong> <a href="https://wa.me/919578299953" style="color: #25D366;">+91 95782 99953</a>
           </div>
@@ -739,10 +999,10 @@
           <div class="footer-heading">Navigation</div>
           <ul class="footer-links">
             <li><a href="#hero">Home</a></li>
-            <li><a href="#properties">Featured Properties</a></li>
-            <li><a href="#services">Our Services</a></li>
+            <li><a href="#properties">Properties</a></li>
+            <li><a href="construction.html">Construction Services</a></li>
             <li><a href="#why-us">Why Choose Us</a></li>
-            <li><a href="#about">About TLF BUILDERS</a></li>
+            <li><a href="#about">About Us</a></li>
             <li><a href="#contact">Get In Touch</a></li>
           </ul>
         </div>

@@ -22,6 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initBrandSettings();
   setupNavigation();
   setupGeneralForms();
+  setupConstructionEnquireButtons();
   setupModals();
   setupHashRouting();
   setupStickyHeader();
@@ -240,17 +241,20 @@ function setupGeneralForms() {
       const name = contactForm.name ? contactForm.name.value.trim() : '';
       const phone = contactForm.phone ? contactForm.phone.value.trim() : '';
       const email = contactForm.email ? contactForm.email.value.trim() : 'N/A';
-      const interest = contactForm.interest ? contactForm.interest.value : 'General Enquiry';
+      const interest = contactForm.interest ? contactForm.interest.value : 'General Construction & Property Enquiry';
+      const location = contactForm.location ? contactForm.location.value.trim() : '';
+      const landStatus = contactForm.land_status ? contactForm.land_status.value : 'Not decided';
+      const budget = contactForm.budget ? contactForm.budget.value : 'To be discussed';
       const message = contactForm.message ? contactForm.message.value.trim() : '';
       const dpdpConsent = contactForm.dpdp_consent ? contactForm.dpdp_consent.checked : true;
 
       if (!name || !phone || !message) {
-        showToast('Please provide your name, mobile number, and requirements.', 'error');
+        showToast('Please provide your full name, phone number, and project requirements.', 'error');
         return;
       }
 
       if (!validateIndianPhone(phone)) {
-        showToast('Please enter a valid 10-digit Indian mobile number (e.g. +91 95782 99953).', 'error');
+        showToast('Please enter a valid 10-digit Indian phone number (e.g. +91 95782 99953).', 'error');
         return;
       }
 
@@ -265,22 +269,31 @@ function setupGeneralForms() {
         phone,
         email,
         interest,
+        service: interest,
+        location: location || 'Kanniyakumari District',
+        landStatus,
+        budget,
         message,
-        source: 'Contact Us Section Enquiry Form'
+        source: 'Get in Touch Main Enquiry Form'
       });
 
       if (savedLead) {
-        showToast(`Thank you, ${name}! Your enquiry (${savedLead.id}) has been recorded. Our advisory team will reach out at ${phone} promptly.`, 'success');
+        showToast(`Thank you, ${name}! Your enquiry (${savedLead.id}) for "${interest}" has been submitted successfully. Our team will contact you at ${phone} promptly.`, 'success');
         updateLeadsBadge();
 
         // Prompt user to immediately transmit via WhatsApp if they prefer
         const shouldWhatsApp = confirm(`Enquiry logged with Ref #${savedLead.id}!\nWould you like to send this enquiry to TLF BUILDERS on WhatsApp (+91 95782 99953) now?`);
         if (shouldWhatsApp) {
-          const waMsg = `Hello TLF BUILDERS, my name is ${name}. I am enquiring about "${interest}" (Ref: ${savedLead.id}). Message: ${message}`;
+          const locText = location ? ` (Location: ${location})` : '';
+          const landText = landStatus ? ` [Land: ${landStatus}]` : '';
+          const budText = budget ? ` [Budget: ${budget}]` : '';
+          const waMsg = `Hello TLF BUILDERS, my name is ${name}. I am enquiring about "${interest}"${locText}${landText}${budText} (Ref: ${savedLead.id}). Requirements: ${message}`;
           window.open(siteConfig.generateWhatsAppUrl(waMsg), '_blank');
         }
 
         contactForm.reset();
+      } else {
+        showToast('An error occurred while saving your enquiry. Please call us directly at +91 95782 99953.', 'error');
       }
     });
   }
@@ -368,6 +381,84 @@ function setupGeneralForms() {
 }
 
 // ==========================================
+// 7B. CONSTRUCTION ENQUIRY PRESELECTION & SCROLL
+// ==========================================
+function setupConstructionEnquireButtons() {
+  const handlePreselection = (serviceName) => {
+    if (!serviceName) return;
+    const interestSelect = document.getElementById('contact-interest');
+    if (interestSelect) {
+      let matched = false;
+      const cleanService = serviceName.toLowerCase().trim();
+      for (let i = 0; i < interestSelect.options.length; i++) {
+        const optVal = interestSelect.options[i].value.toLowerCase();
+        const optTxt = interestSelect.options[i].text.toLowerCase();
+        if (optVal === cleanService || optTxt.includes(cleanService) || cleanService.includes(optVal)) {
+          interestSelect.selectedIndex = i;
+          matched = true;
+          break;
+        }
+      }
+      if (!matched) {
+        const newOpt = new Option(serviceName, serviceName, true, true);
+        interestSelect.add(newOpt);
+      }
+    }
+  };
+
+  // Click listeners on buttons across the page
+  document.querySelectorAll('.construction-enquire-btn').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      const serviceName = btn.getAttribute('data-service') || '';
+      handlePreselection(serviceName);
+
+      const contactSection = document.getElementById('contact');
+      if (contactSection) {
+        e.preventDefault();
+        contactSection.scrollIntoView({ behavior: 'smooth' });
+
+        // Highlight form card
+        const formCard = document.getElementById('contact-form-card');
+        if (formCard) {
+          formCard.classList.remove('form-highlight-pulse');
+          void formCard.offsetWidth; // trigger reflow
+          formCard.classList.add('form-highlight-pulse');
+        }
+
+        // Focus first input
+        const nameInput = document.getElementById('contact-name');
+        if (nameInput) {
+          setTimeout(() => nameInput.focus(), 500);
+        }
+      }
+    });
+  });
+
+  // Check URL query param e.g. index.html?service=Residential+House+Construction#contact
+  try {
+    const urlParams = new URLSearchParams(window.location.search);
+    const serviceParam = urlParams.get('service');
+    if (serviceParam) {
+      handlePreselection(serviceParam);
+      if (window.location.hash === '#contact' || window.location.hash === '') {
+        const contactSection = document.getElementById('contact');
+        if (contactSection) {
+          setTimeout(() => {
+            contactSection.scrollIntoView({ behavior: 'smooth' });
+            const formCard = document.getElementById('contact-form-card');
+            if (formCard) formCard.classList.add('form-highlight-pulse');
+            const nameInput = document.getElementById('contact-name');
+            if (nameInput) nameInput.focus();
+          }, 350);
+        }
+      }
+    }
+  } catch (err) {
+    console.error('URL preselection check failed:', err);
+  }
+}
+
+// ==========================================
 // 8. SAVED LEADS & ENQUIRIES VIEWER
 // ==========================================
 function setupLeadsViewer() {
@@ -427,7 +518,10 @@ function renderLeadsList() {
             <span class="lead-item-time">${lead.formattedDate}</span>
           </div>
           <div class="lead-item-meta">
-            <strong>Interest:</strong> ${lead.interest} | <strong>Ref:</strong> ${lead.id}
+            <strong>Service/Interest:</strong> ${lead.interest || lead.service} | <strong>Ref:</strong> ${lead.id}
+            ${lead.location ? `<br><strong>Location:</strong> ${lead.location}` : ''}
+            ${lead.landStatus ? ` | <strong>Land:</strong> ${lead.landStatus}` : ''}
+            ${lead.budget ? ` | <strong>Budget:</strong> ${lead.budget}` : ''}
           </div>
           <div class="lead-item-msg">
             ${lead.message || 'No additional message.'}
@@ -462,17 +556,20 @@ function renderLeadsList() {
   if (exportBtn) {
     exportBtn.addEventListener('click', () => {
       const csvRows = [
-        ['ID', 'Date', 'Customer Name', 'Phone', 'Email', 'Interest', 'Source', 'Message']
+        ['ID', 'Date', 'Customer Name', 'Phone', 'Email', 'Service/Interest', 'Location', 'Land Availability', 'Budget', 'Source', 'Message']
       ];
       leads.forEach(l => {
         csvRows.push([
           `"${l.id}"`,
           `"${l.formattedDate}"`,
-          `"${l.name.replace(/"/g, '""')}"`,
-          `"${l.phone}"`,
-          `"${l.email}"`,
-          `"${(l.interest || '').replace(/"/g, '""')}"`,
-          `"${l.source || ''}"`,
+          `"${(l.name || '').replace(/"/g, '""')}"`,
+          `"${l.phone || ''}"`,
+          `"${l.email || ''}"`,
+          `"${(l.interest || l.service || '').replace(/"/g, '""')}"`,
+          `"${(l.location || '').replace(/"/g, '""')}"`,
+          `"${(l.landStatus || '').replace(/"/g, '""')}"`,
+          `"${(l.budget || '').replace(/"/g, '""')}"`,
+          `"${(l.source || '').replace(/"/g, '""')}"`,
           `"${(l.message || '').replace(/"/g, '""')}"`
         ]);
       });

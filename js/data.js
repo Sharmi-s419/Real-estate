@@ -340,7 +340,7 @@ export const properties = [
     heroImage: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1400&q=80",
     gallery: [
       "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1400&q=80",
-      "https://images.unsplash.com/photo-1577495508048-b635879837f1?auto=format&fit=crop&w=1200&q=80"
+      "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=80"
     ],
     shortDescription: "Strategic commercial land in Nagercoil along NH 66 developed by TLF BUILDERS with 60-ft road frontage, ideal for showrooms, clinics, or commercial complexes.",
     fullDescription: "Occupying an enviable corner along the active NH 66 highway corridor in Nagercoil, this 10-cent commercial land parcel delivers maximum brand visibility and high vehicular footfall. Complete with commercial zoning approvals, clear documentation, and direct highway entry. TLF BUILDERS also offers turnkey design and commercial construction services.",
