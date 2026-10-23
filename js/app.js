@@ -7,7 +7,6 @@ import {
   formatIndianPrice,
   formatIndianDate,
   validateIndianPhone,
-  validateIndianPin,
   saveEnquiry,
   getEnquiries,
   deleteEnquiry
@@ -22,7 +21,6 @@ const state = {
 document.addEventListener('DOMContentLoaded', () => {
   initBrandSettings();
   setupNavigation();
-  setupSellForm();
   setupGeneralForms();
   setupModals();
   setupHashRouting();
@@ -228,63 +226,7 @@ function closePropertyModal() {
   }
 }
 
-// ==========================================
-// 6. SELL OR PROMOTE PROPERTY FORM
-// ==========================================
-function setupSellForm() {
-  const form = document.getElementById('sell-property-form');
-  if (!form) return;
 
-  form.addEventListener('submit', (e) => {
-    e.preventDefault();
-
-    const ownerName = form.owner_name ? form.owner_name.value.trim() : '';
-    const ownerPhone = form.owner_phone ? form.owner_phone.value.trim() : '';
-    const propLocation = form.property_location ? form.property_location.value.trim() : '';
-    const propType = form.property_type ? form.property_type.value : '';
-    const expectedPrice = form.expected_price ? form.expected_price.value.trim() : '';
-    const propDesc = form.property_description ? form.property_description.value.trim() : '';
-    const pinVal = form.property_pincode ? form.property_pincode.value.trim() : '';
-    const listingPurpose = form.listing_purpose ? form.listing_purpose.value : 'Sell Property';
-    const dpdpConsent = form.dpdp_consent ? form.dpdp_consent.checked : false;
-
-    // Validation
-    if (!ownerName || !ownerPhone || !propLocation || !propType || !expectedPrice || !propDesc) {
-      showToast('Please complete all required fields (*).', 'error');
-      return;
-    }
-
-    if (!validateIndianPhone(ownerPhone)) {
-      showToast('Please enter a valid 10-digit Indian mobile number (e.g. +91 95782 99953).', 'error');
-      return;
-    }
-
-    if (pinVal && !validateIndianPin(pinVal)) {
-      showToast('Please enter a valid 6-digit Indian PIN code (e.g. 600001).', 'error');
-      return;
-    }
-
-    if (!dpdpConsent) {
-      showToast('Please consent under the DPDP Act, 2023 to proceed.', 'error');
-      return;
-    }
-
-    // Persist verified lead to localStorage
-    const savedLead = saveEnquiry({
-      name: ownerName,
-      phone: ownerPhone,
-      interest: `${listingPurpose}: ${propType} at ${propLocation} (Budget: ${expectedPrice})`,
-      message: propDesc,
-      source: 'Promote/Sell Property Form'
-    });
-
-    if (savedLead) {
-      showToast(`Thank you, ${ownerName}! Your property submission (${savedLead.id}) has been recorded. Our team will contact you within 24 business hours.`, 'success');
-      updateLeadsBadge();
-      form.reset();
-    }
-  });
-}
 
 // ==========================================
 // 7. GENERAL FORMS (CONTACT & PROPERTY MODAL)

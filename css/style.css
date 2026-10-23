@@ -1134,21 +1134,6 @@ p {
 /* ==========================================================================
    FORMS & LEAD GENERATION
    ========================================================================== */
-.sell-section-card {
-  max-width: 860px;
-  margin: 0 auto;
-  background: var(--color-white);
-  border-radius: var(--radius-lg);
-  padding: 44px;
-  box-shadow: var(--shadow-md);
-  border: 1px solid var(--border-subtle);
-}
-
-@media (max-width: 768px) {
-  .sell-section-card {
-    padding: 24px;
-  }
-}
 
 .form-group {
   display: flex;

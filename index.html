@@ -48,7 +48,7 @@
         <a href="#properties" class="nav-link" id="nav-properties">Properties</a>
         <a href="#services" class="nav-link" id="nav-services">Our Services</a>
         <a href="#about" class="nav-link" id="nav-about">About Us</a>
-        <a href="#contact" class="nav-link" id="nav-contact">Contact</a>
+        <a href="#contact" class="nav-link" id="nav-contact">Get In Touch</a>
       </nav>
 
       <!-- CTA & Mobile Trigger -->
@@ -91,7 +91,7 @@
       <a href="#properties" class="mobile-nav-link" id="mob-properties">Properties</a>
       <a href="#services" class="mobile-nav-link" id="mob-services">Our Services</a>
       <a href="#about" class="mobile-nav-link" id="mob-about">About Us</a>
-      <a href="#contact" class="mobile-nav-link" id="mob-contact">Contact</a>
+      <a href="#contact" class="mobile-nav-link" id="mob-contact">Get In Touch</a>
       <div style="display: flex; flex-direction: column; gap: 10px; margin-top: 14px; padding-top: 12px; border-top: 1px solid var(--border-subtle);">
         <a href="tel:+919578299953" class="btn btn-secondary" style="width: 100%; justify-content: center;">
           <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
@@ -128,7 +128,7 @@
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
               </a>
               <a href="#contact" class="btn btn-secondary btn-lg" id="hero-contact-btn">
-                <span>Contact Us</span>
+                <span>Get In Touch</span>
               </a>
             </div>
 
@@ -495,111 +495,7 @@
       </div>
     </section>
 
-    <!-- ==========================================================================
-         SELL OR PROMOTE YOUR PROPERTY / LAND SECTION
-         ========================================================================== -->
-    <section class="section section-sand" id="sell">
-      <div class="container">
-        <header class="section-header">
-          <span class="section-eyebrow">For Landowners and Sellers</span>
-          <h2 class="section-title">List or Discuss Developing Your Property</h2>
-          <p class="section-subtitle">
-            Have land, residential plots, or commercial property in Kanyakumari district? Submit your details to discuss outright sale or joint venture development with TLF BUILDERS.
-          </p>
-        </header>
 
-        <div class="sell-section-card">
-          <form id="sell-property-form" novalidate>
-            <!-- Listing Purpose -->
-            <div class="form-full">
-              <label class="form-label">I wish to *</label>
-              <div class="form-radio-group">
-                <label class="radio-label">
-                  <input type="radio" name="listing_purpose" value="Sell Property" checked required>
-                  <span>Sell My Plot / Property</span>
-                </label>
-                <label class="radio-label">
-                  <input type="radio" name="listing_purpose" value="Joint Venture Development" required>
-                  <span>Explore Joint Venture Development</span>
-                </label>
-              </div>
-            </div>
-
-            <!-- Two Col: Owner Name & Phone -->
-            <div class="form-two-col">
-              <div class="form-group">
-                <label for="owner-name" class="form-label">Owner's Full Name *</label>
-                <input type="text" id="owner-name" name="owner_name" class="form-input" placeholder="e.g. S. Murugan / R. Kumar" required>
-              </div>
-              <div class="form-group">
-                <label for="owner-phone" class="form-label">Mobile Number *</label>
-                <input type="tel" id="owner-phone" name="owner_phone" class="form-input" placeholder="e.g. +91 95782 99953 (10-digit mobile)" required>
-                <span class="input-hint-text">10-digit mobile number with or without +91 prefix.</span>
-              </div>
-            </div>
-
-            <!-- Two Col: Location & PIN Code -->
-            <div class="form-two-col">
-              <div class="form-group">
-                <label for="property-location" class="form-label">Property Locality & City *</label>
-                <input type="text" id="property-location" name="property_location" class="form-input" placeholder="e.g. Green Valley Corridor or Bypass Road" required>
-              </div>
-              <div class="form-group">
-                <label for="property-pincode" class="form-label">PIN Code (6 Digits)</label>
-                <input type="text" id="property-pincode" name="property_pincode" class="form-input" placeholder="e.g. 600001" maxlength="6" pattern="[1-9][0-9]{5}">
-                <span class="input-hint-text">Standard 6-digit Indian Postal Index Number.</span>
-              </div>
-            </div>
-
-            <!-- Two Col: Property Type & Expected Price -->
-            <div class="form-two-col">
-              <div class="form-group">
-                <label for="property-type" class="form-label">Property Category *</label>
-                <select id="property-type" name="property_type" class="form-select" required>
-                  <option value="">Select Category</option>
-                  <option value="Residential Plot / Land">Residential Plot / Land</option>
-                  <option value="Agricultural / Layout Land">Agricultural / Future Layout Land</option>
-                  <option value="Independent House / Villa">Independent House / Villa</option>
-                  <option value="Commercial Land">Commercial Land / Highway Plot</option>
-                </select>
-              </div>
-              <div class="form-group">
-                <label for="expected-price" class="form-label">Expected Price or Valuation (INR) *</label>
-                <input type="text" id="expected-price" name="expected_price" class="form-input" placeholder="e.g. ₹45 Lakh or ₹1.2 Crore" required>
-                <span class="input-hint-text">Specify in Lakh / Crore (INR).</span>
-              </div>
-            </div>
-
-            <!-- Description -->
-            <div class="form-full">
-              <div class="form-group">
-                <label for="property-description" class="form-label">Property Description & Dimensions *</label>
-                <textarea id="property-description" name="property_description" rows="3" class="form-input" placeholder="Plot dimensions (e.g. 30x40, 40x60), road width, Patta status, or key landmarks..." required></textarea>
-              </div>
-            </div>
-
-            <!-- Consent Checkbox -->
-            <div class="form-full" style="margin-top: 10px;">
-              <label class="checkbox-label">
-                <input type="checkbox" id="sell-dpdp-consent" name="dpdp_consent" required checked>
-                <span>I authorize TLF BUILDERS to contact me regarding my property submission under the Digital Personal Data Protection Act, 2023.</span>
-              </label>
-            </div>
-
-            <!-- Submit Button & Feedback -->
-            <div style="display: flex; flex-direction: column; gap: 14px; margin-top: 20px;">
-              <button type="submit" class="btn btn-primary btn-lg" id="submit-sell-btn" style="width: 100%;">
-                <span>Submit Property Details to TLF BUILDERS</span>
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
-              </button>
-              <p style="font-size: 0.82rem; text-align: center; color: var(--text-light);">
-                Your details are stored securely. Our property development team will review your proposal and contact you within 24 business hours.
-              </p>
-            </div>
-          </form>
-        </div>
-      </div>
-    </section>
 
     <!-- ==========================================================================
          ABOUT TLF BUILDERS SECTION
@@ -649,13 +545,13 @@
     </section>
 
     <!-- ==========================================================================
-         CONTACT & ENQUIRY SECTION
+         GET IN TOUCH & ENQUIRY SECTION (MAIN ENQUIRY PAGE)
          ========================================================================== -->
     <section class="section section-cream" id="contact">
       <div class="container">
         <header class="section-header">
-          <span class="section-eyebrow">Get In Touch</span>
-          <h2 class="section-title">Connect With TLF BUILDERS</h2>
+          <span class="section-eyebrow">Contact & Advisory</span>
+          <h2 class="section-title">Get In Touch</h2>
           <p class="section-subtitle">
             Whether you are seeking a residential plot, booking an independent villa, or exploring joint property development, our team is ready to assist you.
           </p>
@@ -780,9 +676,10 @@
                     <option value="TLF Landmark Multi-Storey Commercial Complex (Colachel)">TLF Landmark — Commercial Complex (Colachel)</option>
                     <option value="TLF High-Yield Commercial Land Asset (Suchindram)">TLF High-Yield Commercial Land (Suchindram)</option>
                   </optgroup>
-                  <optgroup label="General Enquiries">
+                  <optgroup label="General & Development Enquiries">
                     <option value="General Residential Property Consultation">General Residential Property Consultation</option>
                     <option value="General Commercial Investment Consultation">General Commercial Investment Consultation</option>
+                    <option value="Landowner Property Sale / Joint Venture Development">Landowner Property Sale / Joint Venture Development</option>
                   </optgroup>
                 </select>
               </div>
@@ -845,9 +742,8 @@
             <li><a href="#properties">Featured Properties</a></li>
             <li><a href="#services">Our Services</a></li>
             <li><a href="#why-us">Why Choose Us</a></li>
-            <li><a href="#sell">List Your Property</a></li>
             <li><a href="#about">About TLF BUILDERS</a></li>
-            <li><a href="#contact">Contact Us</a></li>
+            <li><a href="#contact">Get In Touch</a></li>
           </ul>
         </div>
 
