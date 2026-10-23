@@ -45,8 +45,7 @@
       <!-- Desktop Navigation Menu -->
       <nav class="desktop-nav" aria-label="Main Navigation">
         <a href="#hero" class="nav-link active" id="nav-home">Home</a>
-        <a href="#properties" class="nav-link" id="nav-properties" data-cat="all">Properties</a>
-        <a href="#property-categories" class="nav-link" id="nav-categories">Categories</a>
+        <a href="#properties" class="nav-link" id="nav-properties">Properties</a>
         <a href="#services" class="nav-link" id="nav-services">Our Services</a>
         <a href="#about" class="nav-link" id="nav-about">About Us</a>
         <a href="#contact" class="nav-link" id="nav-contact">Contact</a>
@@ -90,7 +89,6 @@
       </div>
       <a href="#hero" class="mobile-nav-link" id="mob-home">Home</a>
       <a href="#properties" class="mobile-nav-link" id="mob-properties">Properties</a>
-      <a href="#property-categories" class="mobile-nav-link" id="mob-categories">Categories</a>
       <a href="#services" class="mobile-nav-link" id="mob-services">Our Services</a>
       <a href="#about" class="mobile-nav-link" id="mob-about">About Us</a>
       <a href="#contact" class="mobile-nav-link" id="mob-contact">Contact</a>
@@ -134,67 +132,19 @@
               </a>
             </div>
 
-            <!-- Property Search & Quick Filter Panel -->
-            <div class="search-panel-wrap" id="hero-search-panel">
-              <div class="search-purpose-tabs" role="tablist" aria-label="Project Category Tabs">
-                <button type="button" class="search-tab active" role="tab" aria-selected="true" id="tab-all" data-category="all">All Properties</button>
-                <button type="button" class="search-tab" role="tab" aria-selected="false" id="tab-res" data-category="residential">Residential</button>
-                <button type="button" class="search-tab" role="tab" aria-selected="false" id="tab-com" data-category="commercial">Commercial</button>
+            <!-- Key Trust Indicators (Clean, non-card inline badges) -->
+            <div class="hero-trust-bar">
+              <div class="hero-trust-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                <span>100% Clear Titles</span>
               </div>
-
-              <div class="search-fields-grid">
-                <div class="form-group">
-                  <label for="search-type" class="form-label">Property Type</label>
-                  <select id="search-type" class="form-select">
-                    <option value="all">All Property Types</option>
-                    <optgroup label="Residential Properties">
-                      <option value="Residential Plot">Residential Plots & Land</option>
-                      <option value="Individual House">Individual Houses</option>
-                      <option value="Villa">Luxury Villas</option>
-                      <option value="Apartment">Apartments & Flats</option>
-                      <option value="New Residential Development">New Residential Developments</option>
-                    </optgroup>
-                    <optgroup label="Commercial Properties">
-                      <option value="Commercial Plot">Commercial Plots & Land</option>
-                      <option value="Shop & Retail Space">Shops & Retail Spaces</option>
-                      <option value="Office Space">Office Spaces</option>
-                      <option value="Commercial Building">Commercial Buildings</option>
-                      <option value="Investment Property">Investment Properties</option>
-                    </optgroup>
-                  </select>
-                </div>
-
-                <div class="form-group">
-                  <label for="search-location" class="form-label">Location in Kanyakumari</label>
-                  <select id="search-location" class="form-select">
-                    <option value="all">All Locations in Kanyakumari</option>
-                    <option value="Nagercoil, Kanyakumari Dist.">Nagercoil</option>
-                    <option value="Marthandam, Kanyakumari Dist.">Marthandam</option>
-                    <option value="Kanyakumari Coast, Kanyakumari Dist.">Kanyakumari Coast</option>
-                    <option value="Asaripallam, Nagercoil, Kanyakumari Dist.">Asaripallam, Nagercoil</option>
-                    <option value="Thuckalay, Kanyakumari Dist.">Thuckalay / Padmanabhapuram</option>
-                    <option value="Nagercoil NH 66 Corridor, Kanyakumari Dist.">NH 66 Bypass Corridor</option>
-                    <option value="Marthandam Junction, Kanyakumari Dist.">Marthandam Junction</option>
-                    <option value="Collectorate Road, Nagercoil, Kanyakumari Dist.">Collectorate Road, Nagercoil</option>
-                    <option value="Colachel Harbour Road, Kanyakumari Dist.">Colachel Harbour Road</option>
-                    <option value="Suchindram Bypass, Kanyakumari Dist.">Suchindram Bypass</option>
-                  </select>
-                </div>
-
-                <div class="form-group">
-                  <label for="search-budget" class="form-label">Budget Range (INR)</label>
-                  <select id="search-budget" class="form-select">
-                    <option value="all">Any Budget</option>
-                    <option value="under-50l">Under ₹50 Lakh</option>
-                    <option value="50l-1cr">₹50 Lakh – ₹1 Crore</option>
-                    <option value="above-1cr">Above ₹1 Crore</option>
-                  </select>
-                </div>
-
-                <button type="button" class="btn btn-primary" id="search-submit-btn" style="height: 46px;">
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
-                  <span>Search</span>
-                </button>
+              <div class="hero-trust-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
+                <span>Direct Developer Pricing</span>
+              </div>
+              <div class="hero-trust-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                <span>Kanyakumari Specialists</span>
               </div>
             </div>
           </div>
@@ -214,166 +164,168 @@
       </div>
     </section>
 
-
     <!-- ==========================================================================
-         PROPERTY CATEGORIES SECTION (Dedicated Residential & Commercial Sections)
+         PORTFOLIO GALLERY SECTION — DEMO REAL ESTATE PHOTOGRAPHS
          ========================================================================== -->
-    <section class="section section-sand" id="property-categories">
+    <section class="section section-cream portfolio-section" id="properties">
       <div class="container">
-        <header class="section-header">
-          <span class="section-eyebrow">Property Categories</span>
-          <h2 class="section-title">Specialized Property Divisions</h2>
+        <header class="section-header portfolio-header">
+          <span class="section-eyebrow">Our Kanniyakumari District Portfolio</span>
+          <h2 class="section-title">Visual Property Gallery</h2>
           <p class="section-subtitle">
-            <strong>TLF BUILDERS</strong> offers dedicated real estate divisions serving homebuyers, investors, and commercial enterprises across Kanyakumari district, Tamil Nadu.
+            Explore illustrative photographs of the residential and commercial property formats we promote and develop across Kanniyakumari district.
           </p>
-        </header>
-
-        <div class="property-categories-grid">
-          <!-- Category 1: Residential Properties -->
-          <article class="category-showcase-card" id="residential-section">
-            <div class="category-showcase-media">
-              <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80" alt="Residential Properties by TLF BUILDERS" class="category-showcase-img" loading="lazy">
-              <span class="category-showcase-badge">Residential Division</span>
-            </div>
-            <div class="category-showcase-body">
-              <h3 class="category-showcase-title">Residential Properties</h3>
-              <p class="category-showcase-desc">
-                From demarcated villa plots to turnkey independent homes and modern flats, we build living spaces with clear titles, ample groundwater, and natural harmony.
-              </p>
-              <div class="category-items-list">
-                <div class="category-item-row">
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-                  <span>Residential plots and land for sale</span>
-                </div>
-                <div class="category-item-row">
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-                  <span>Individual houses</span>
-                </div>
-                <div class="category-item-row">
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-                  <span>Villas</span>
-                </div>
-                <div class="category-item-row">
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-                  <span>Apartments and flats</span>
-                </div>
-                <div class="category-item-row">
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-                  <span>New residential developments</span>
-                </div>
-              </div>
-              <div class="category-showcase-actions">
-                <button type="button" class="btn btn-primary select-category-btn" data-category="residential" style="flex: 1;">
-                  <span>Explore Residential Properties</span>
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
-                </button>
-              </div>
-            </div>
-          </article>
-
-          <!-- Category 2: Commercial Properties -->
-          <article class="category-showcase-card" id="commercial-section">
-            <div class="category-showcase-media">
-              <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=80" alt="Commercial Properties by TLF BUILDERS" class="category-showcase-img" loading="lazy">
-              <span class="category-showcase-badge" style="background: #271E05; color: #FDE68A; border-color: #D4AF37;">Commercial Division</span>
-            </div>
-            <div class="category-showcase-body">
-              <h3 class="category-showcase-title">Commercial Properties</h3>
-              <p class="category-showcase-desc">
-                High-yield commercial assets and strategic business land along arterial transit corridors in Kanyakumari district designed for maximum commercial footfall.
-              </p>
-              <div class="category-items-list">
-                <div class="category-item-row">
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-                  <span>Commercial plots and land</span>
-                </div>
-                <div class="category-item-row">
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-                  <span>Shops and retail spaces</span>
-                </div>
-                <div class="category-item-row">
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-                  <span>Office spaces</span>
-                </div>
-                <div class="category-item-row">
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-                  <span>Commercial buildings</span>
-                </div>
-                <div class="category-item-row">
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-                  <span>Business and investment properties</span>
-                </div>
-              </div>
-              <div class="category-showcase-actions">
-                <button type="button" class="btn btn-primary select-category-btn" data-category="commercial" style="flex: 1;">
-                  <span>Explore Commercial Properties</span>
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
-                </button>
-              </div>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- ==========================================================================
-         AVAILABLE PROPERTIES & PROJECTS SECTION
-         ========================================================================== -->
-    <section class="section section-cream" id="properties">
-      <div class="container">
-        <header class="section-header">
-          <span class="section-eyebrow">Our Kanyakumari District Portfolio</span>
-          <h2 class="section-title">Featured Properties & Projects</h2>
-          <p class="section-subtitle">
-            Explore verified residential and commercial properties in Kanyakumari district promoted by <strong>TLF BUILDERS</strong>.
-          </p>
-          <div class="demo-data-notice" role="note">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
-            <span>Verified Kanyakumari district property information, statutory approvals, and direct developer pricing in Indian Lakh & Crore (INR).</span>
+          <div class="gallery-demo-notice" role="note">
+            <span class="demo-notice-tag">Demo Portfolio — Illustrative Property Examples</span>
+            <span class="demo-notice-text">Photographs displayed below are illustrative demo examples representing residential and commercial property formats. They do not constitute actual completed TLF BUILDERS projects, verified listings, or binding offers.</span>
           </div>
         </header>
 
-        <!-- Category Switcher Tabs -->
-        <div class="category-tabs-wrapper">
-          <div class="category-tabs" role="tablist" aria-label="Select Property Category">
-            <button type="button" class="category-tab-btn active" data-category="all" role="tab" aria-selected="true" id="filter-cat-all">
-              <span>All Properties</span>
-              <span class="category-badge-count" id="badge-count-all">10</span>
-            </button>
-            <button type="button" class="category-tab-btn" data-category="residential" role="tab" aria-selected="false" id="filter-cat-res">
-              <span>Residential Properties</span>
-              <span class="category-badge-count" id="badge-count-res">5</span>
-            </button>
-            <button type="button" class="category-tab-btn" data-category="commercial" role="tab" aria-selected="false" id="filter-cat-com">
-              <span>Commercial Properties</span>
-              <span class="category-badge-count" id="badge-count-com">5</span>
-            </button>
-          </div>
-        </div>
+        <!-- Portfolio Image Gallery Grid (Easily replaceable demo photographs) -->
+        <div class="portfolio-gallery-grid">
+          <!-- Demo Item 1: Residential Plots and Vacant Land -->
+          <figure class="gallery-item">
+            <div class="gallery-img-wrapper">
+              <img 
+                src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1200&q=80" 
+                alt="Demo photograph of residential plots and vacant land" 
+                class="gallery-img" 
+                loading="lazy"
+              >
+            </div>
+            <figcaption class="gallery-caption">
+              <span class="gallery-caption-title">Residential Plots & Vacant Land</span>
+              <span class="gallery-caption-type">Residential Property</span>
+            </figcaption>
+          </figure>
 
-        <!-- Sub-Type Filter Pills Bar -->
-        <div class="properties-filter-bar">
-          <div class="filter-pill-group" id="dynamic-filter-pills" role="group" aria-label="Filter Properties by Type">
-            <button type="button" class="filter-pill active" data-filter-type="all">All Types</button>
-            <button type="button" class="filter-pill" data-filter-type="Residential Plot">Residential Plots</button>
-            <button type="button" class="filter-pill" data-filter-type="Individual House">Individual Houses</button>
-            <button type="button" class="filter-pill" data-filter-type="Villa">Luxury Villas</button>
-            <button type="button" class="filter-pill" data-filter-type="Apartment">Apartments</button>
-            <button type="button" class="filter-pill" data-filter-type="New Residential Development">New Developments</button>
-            <button type="button" class="filter-pill" data-filter-type="Commercial Plot">Commercial Land</button>
-            <button type="button" class="filter-pill" data-filter-type="Shop & Retail Space">Retail Shops</button>
-            <button type="button" class="filter-pill" data-filter-type="Office Space">Office Spaces</button>
-            <button type="button" class="filter-pill" data-filter-type="Commercial Building">Commercial Buildings</button>
-            <button type="button" class="filter-pill" data-filter-type="Investment Property">Investment Land</button>
-          </div>
-          <div class="properties-count" id="properties-count-display">
-            Showing properties
-          </div>
-        </div>
+          <!-- Demo Item 2: Independent House -->
+          <figure class="gallery-item">
+            <div class="gallery-img-wrapper">
+              <img 
+                src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=1200&q=80" 
+                alt="Demo photograph of an independent house" 
+                class="gallery-img" 
+                loading="lazy"
+              >
+            </div>
+            <figcaption class="gallery-caption">
+              <span class="gallery-caption-title">Independent House</span>
+              <span class="gallery-caption-type">Residential Property</span>
+            </figcaption>
+          </figure>
 
-        <!-- Properties Grid Container (Populated by JavaScript) -->
-        <div class="properties-grid" id="properties-grid-container" aria-live="polite">
-          <!-- Dynamic cards injected via app.js -->
+          <!-- Demo Item 3: Luxury Villa -->
+          <figure class="gallery-item">
+            <div class="gallery-img-wrapper">
+              <img 
+                src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1200&q=80" 
+                alt="Demo photograph of a luxury villa" 
+                class="gallery-img" 
+                loading="lazy"
+              >
+            </div>
+            <figcaption class="gallery-caption">
+              <span class="gallery-caption-title">Luxury Villa</span>
+              <span class="gallery-caption-type">Residential Property</span>
+            </figcaption>
+          </figure>
+
+          <!-- Demo Item 4: Modern Residential Buildings & Townships -->
+          <figure class="gallery-item">
+            <div class="gallery-img-wrapper">
+              <img 
+                src="https://images.unsplash.com/photo-1524813686514-a57563d77d66?auto=format&fit=crop&w=1200&q=80" 
+                alt="Demo photograph of modern residential buildings" 
+                class="gallery-img" 
+                loading="lazy"
+              >
+            </div>
+            <figcaption class="gallery-caption">
+              <span class="gallery-caption-title">Modern Residential Buildings</span>
+              <span class="gallery-caption-type">Residential Development</span>
+            </figcaption>
+          </figure>
+
+          <!-- Demo Item 5: Apartments & Flats -->
+          <figure class="gallery-item">
+            <div class="gallery-img-wrapper">
+              <img 
+                src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1200&q=80" 
+                alt="Demo photograph of modern apartments and flats" 
+                class="gallery-img" 
+                loading="lazy"
+              >
+            </div>
+            <figcaption class="gallery-caption">
+              <span class="gallery-caption-title">Apartments & Flats</span>
+              <span class="gallery-caption-type">Residential Property</span>
+            </figcaption>
+          </figure>
+
+          <!-- Demo Item 6: Commercial Buildings -->
+          <figure class="gallery-item">
+            <div class="gallery-img-wrapper">
+              <img 
+                src="https://images.unsplash.com/photo-1541888946425-d0fbb186c5f7?auto=format&fit=crop&w=1200&q=80" 
+                alt="Demo photograph of a commercial building" 
+                class="gallery-img" 
+                loading="lazy"
+              >
+            </div>
+            <figcaption class="gallery-caption">
+              <span class="gallery-caption-title">Commercial Buildings</span>
+              <span class="gallery-caption-type">Commercial Property</span>
+            </figcaption>
+          </figure>
+
+          <!-- Demo Item 7: Shops & Retail Spaces -->
+          <figure class="gallery-item">
+            <div class="gallery-img-wrapper">
+              <img 
+                src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=1200&q=80" 
+                alt="Demo photograph of retail shop space" 
+                class="gallery-img" 
+                loading="lazy"
+              >
+            </div>
+            <figcaption class="gallery-caption">
+              <span class="gallery-caption-title">Shops & Retail Spaces</span>
+              <span class="gallery-caption-type">Commercial Property</span>
+            </figcaption>
+          </figure>
+
+          <!-- Demo Item 8: Corporate Office Spaces -->
+          <figure class="gallery-item">
+            <div class="gallery-img-wrapper">
+              <img 
+                src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1200&q=80" 
+                alt="Demo photograph of office spaces" 
+                class="gallery-img" 
+                loading="lazy"
+              >
+            </div>
+            <figcaption class="gallery-caption">
+              <span class="gallery-caption-title">Office Spaces</span>
+              <span class="gallery-caption-type">Commercial Property</span>
+            </figcaption>
+          </figure>
+
+          <!-- Demo Item 9: Commercial Land & Development Sites -->
+          <figure class="gallery-item">
+            <div class="gallery-img-wrapper">
+              <img 
+                src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=80" 
+                alt="Demo photograph of commercial land and development sites" 
+                class="gallery-img" 
+                loading="lazy"
+              >
+            </div>
+            <figcaption class="gallery-caption">
+              <span class="gallery-caption-title">Commercial Land & Development Sites</span>
+              <span class="gallery-caption-type">Commercial Property</span>
+            </figcaption>
+          </figure>
         </div>
       </div>
     </section>
@@ -418,7 +370,7 @@
                 <span>100% Vaastu compliant individual plot demarcations</span>
               </li>
             </ul>
-            <a href="#properties" class="btn btn-secondary service-action-btn" data-filter-type="Residential Plot">Explore Residential Plots</a>
+            <a href="#properties" class="btn btn-secondary service-action-btn">Explore Residential Plots</a>
           </article>
 
           <!-- Service 2: Turnkey Villa & House Construction -->
@@ -447,7 +399,7 @@
                 <span>Branded electrical, plumbing, and sanitary fittings</span>
               </li>
             </ul>
-            <a href="#properties" class="btn btn-secondary service-action-btn" data-filter-type="Villa">Browse Available Villas</a>
+            <a href="#properties" class="btn btn-secondary service-action-btn">Browse Available Villas</a>
           </article>
 
           <!-- Service 3: Property Advisory & Clear Titles -->
@@ -890,7 +842,6 @@
           <div class="footer-heading">Navigation</div>
           <ul class="footer-links">
             <li><a href="#hero">Home</a></li>
-            <li><a href="#property-categories">Property Categories</a></li>
             <li><a href="#properties">Featured Properties</a></li>
             <li><a href="#services">Our Services</a></li>
             <li><a href="#why-us">Why Choose Us</a></li>
@@ -904,14 +855,14 @@
         <div>
           <div class="footer-heading">Kanyakumari Properties</div>
           <ul class="footer-links">
-            <li><a href="#properties" class="footer-cat-link" data-cat="residential" data-type="Residential Plot">Residential Plots & Land</a></li>
-            <li><a href="#properties" class="footer-cat-link" data-cat="residential" data-type="Individual House">Individual Houses</a></li>
-            <li><a href="#properties" class="footer-cat-link" data-cat="residential" data-type="Villa">Luxury Duplex Villas</a></li>
-            <li><a href="#properties" class="footer-cat-link" data-cat="residential" data-type="Apartment">Apartments & Flats</a></li>
-            <li><a href="#properties" class="footer-cat-link" data-cat="commercial" data-type="Commercial Plot">Commercial Land</a></li>
-            <li><a href="#properties" class="footer-cat-link" data-cat="commercial" data-type="Shop & Retail Space">Retail & Shops</a></li>
-            <li><a href="#properties" class="footer-cat-link" data-cat="commercial" data-type="Office Space">Office Spaces</a></li>
-            <li><a href="#properties" class="footer-cat-link" data-cat="commercial" data-type="Commercial Building">Commercial Buildings</a></li>
+            <li><a href="#properties" class="footer-cat-link">Residential Plots & Land</a></li>
+            <li><a href="#properties" class="footer-cat-link">Individual Houses</a></li>
+            <li><a href="#properties" class="footer-cat-link">Luxury Duplex Villas</a></li>
+            <li><a href="#properties" class="footer-cat-link">Apartments & Flats</a></li>
+            <li><a href="#properties" class="footer-cat-link">Commercial Land</a></li>
+            <li><a href="#properties" class="footer-cat-link">Retail & Shops</a></li>
+            <li><a href="#properties" class="footer-cat-link">Office Spaces</a></li>
+            <li><a href="#properties" class="footer-cat-link">Commercial Buildings</a></li>
           </ul>
         </div>
 

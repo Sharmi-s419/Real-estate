@@ -1,6 +1,7 @@
 {
   "name": "tlf-builders-real-estate-website",
   "version": "1.0.0",
+  "type": "module",
   "description": "Official website for TLF BUILDERS — Real Estate and Property Development",
   "scripts": {
     "dev": "vite --host --port 3000",
